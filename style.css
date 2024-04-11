@@ -1,0 +1,108 @@
+/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+
+body {
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  background-color : #eae2b7;   /*new addition  - background color of the page*/
+   /* Preferred having the body attributes in one place rather then creating another definition seperately if there is no techncial need for it*/
+}
+
+/* Set the font family for any h1, h2, or h3 heading */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Times, serif;
+  text-align: center;    /* new addition*/
+  /* Aligning all the headlines to the center.
+  Although the requirements mentioned them one by one, all the headers on the page were to be centered, so I did it in a centralized manner here*/
+  
+}
+
+article {
+  padding: 50px 0;
+}
+
+article div {
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;   /* new addition  -  aligning paragraph text to the left */
+ /* Preferred having the p attributes in one place then creating another definition seperately if there is no techncial need for it*/
+}
+
+/* The div container constrains the content width within the main container to 600px */
+div {
+  margin: auto;
+  width: 600px;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  align-self: center;/* new addition */
+}
+
+hr {
+  border: 1px solid black;
+}
+
+/* Add your solution below */
+
+
+/* note - some of the attributes were added to already existing definitions on the top section of the page. Those are marked with "new addition".
+Below are elements that needed to be called out specifically */
+
+nav {
+      text-align: center;
+      word-spacing: 20px;
+}
+
+/* p is already defined above, but due to the instructions to add the my solution here, I didnt update the existing item but added another one here. The prefered way would have been just adding the text-align attribute to the existing p tag definitions*/
+
+
+/*"about me" image */
+.image-circle {
+  border-radius: 50%;
+  border: 2px solid;
+  border-color: #003049;
+  align-self: center;    
+}
+
+#introduction{        /*introduction header */
+  align-content: center;
+}
+/*all list items*/
+li{
+  text-align: left;
+}
+
+/* setting the horizontal ruller to not take all the screen width but align with the content width*/
+hr{       
+  margin: auto;
+  width: 600px;  
+}
+
+/* limiting the width of the content in the main section to 600px. though mentioned before, it was not taking affect for all divs, so added this decleratin here*/
+main div {       
+  margin: auto;
+  width: 600px;
+}
+
+
+/*footer paragraph text*/ 
+footer p{
+  text-align: center;
+}
+
+/*links*/
+a{
+  color:#d62828;
+}
+
+a:hover {color: #f77f00}
